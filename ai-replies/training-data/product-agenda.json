@@ -1,0 +1,64 @@
+{
+  "productInfo": {
+    "name": "OneBox Email Analyzer",
+    "description": "AI-powered email management and analysis platform",
+    "keyFeatures": [
+      "Multi-account email aggregation",
+      "AI-powered email categorization",
+      "Real-time notifications for interested emails",
+      "Advanced search and filtering",
+      "Analytics and insights"
+    ],
+    "targetAudience": "Recruiters, Sales Teams, Customer Success Teams",
+    "useCases": [
+      "Job application tracking",
+      "Lead qualification",
+      "Customer communication management",
+      "Email productivity enhancement"
+    ]
+  },
+  "outreachTemplates": [
+    {
+      "scenario": "job_application_response",
+      "context": "When responding to job application emails or interview invitations",
+      "template": "Thank you for your interest in my application! I'm excited about the opportunity to discuss the {{position}} role. I'm available for an interview and you can book a convenient time slot here: {{booking_link}}",
+      "variables": {
+        "position": "Software Engineer",
+        "booking_link": "https://cal.com/example"
+      }
+    },
+    {
+      "scenario": "meeting_request",
+      "context": "When someone requests a meeting or call",
+      "template": "I'd be happy to schedule a meeting with you! Please use this link to book a time that works for both of us: {{booking_link}}. Looking forward to our conversation about {{topic}}.",
+      "variables": {
+        "topic": "the opportunity",
+        "booking_link": "https://cal.com/example"
+      }
+    },
+    {
+      "scenario": "follow_up",
+      "context": "When following up on previous communications",
+      "template": "Thank you for reaching out! I'm following up on our previous conversation about {{topic}}. I'm available to continue our discussion and you can schedule a call here: {{booking_link}}",
+      "variables": {
+        "topic": "the project",
+        "booking_link": "https://cal.com/example"
+      }
+    },
+    {
+      "scenario": "interest_confirmation",
+      "context": "When confirming interest in an opportunity",
+      "template": "I'm very interested in {{opportunity}} and would love to learn more! Please feel free to schedule a call using this link: {{booking_link}}. I'm looking forward to discussing how I can contribute to your team.",
+      "variables": {
+        "opportunity": "this opportunity",
+        "booking_link": "https://cal.com/example"
+      }
+    }
+  ],
+  "bookingLinks": {
+    "default": "https://cal.com/example",
+    "interview": "https://cal.com/example/interview",
+    "meeting": "https://cal.com/example/meeting",
+    "call": "https://cal.com/example/call"
+  }
+}

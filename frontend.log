@@ -1,0 +1,10 @@
+
+> onebox-email-frontend@1.0.0 dev
+> vite
+
+
+  VITE v4.5.14  ready in 402 ms
+
+  ➜  Local:   http://localhost:3000/
+(node:94329) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)

@@ -1,0 +1,49 @@
+{
+  "name": "onebox-email",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.ts",
+  "scripts": {
+    "start": "tsx index.ts",
+    "dev": "tsx --watch index.ts",
+    "api": "tsx backend/api-server.ts",
+    "dev-api": "NODE_OPTIONS=--enable-source-maps node dev-api.js",
+    "search": "tsx searchEmails.ts",
+    "setup": "tsx setupElasticsearch.ts",
+    "test-storage": "tsx testEmailStorage.ts",
+    "test-email": "tsx testEmailConnection.ts",
+    "test:ai-replies": "tsx ai-replies/test-ai-replies.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@elastic/elasticsearch": "^8.19.1",
+    "@langchain/core": "^0.3.75",
+    "@langchain/openai": "^0.6.11",
+    "@slack/web-api": "^7.10.0",
+    "@types/express": "^5.0.3",
+    "@xenova/transformers": "^2.17.2",
+    "axios": "^1.11.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "imap-simple": "^5.1.0",
+    "langchain": "^0.3.33",
+    "mailparser": "^3.7.4",
+    "node-imap": "^0.9.6",
+    "nodemailer": "^7.0.6",
+    "openai": "^5.19.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/mailparser": "^3.4.6",
+    "@types/node": "^24.3.1",
+    "@types/node-imap": "^0.9.3",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}
