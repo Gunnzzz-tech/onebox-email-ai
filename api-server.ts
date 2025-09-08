@@ -1,5 +1,6 @@
 import express from 'express';
 import cors from 'cors';
+import path from 'path';
 import dotenv from 'dotenv';
 import { searchEmails, testElasticsearchConnection, esClient } from './elasticsearchClient.js';
 import aiRepliesRouter from './ai-replies/api/aiRepliesApi.js';
@@ -310,6 +311,15 @@ app.get('/api/events', (req, res) => {
     eventBus.off('new-email', onNewEmail);
     res.end();
   });
+});
+
+// Serve frontend build in production
+const frontendDistPath = path.resolve(process.cwd(), 'frontend', 'dist');
+app.use(express.static(frontendDistPath));
+
+// SPA fallback - send index.html for unknown routes not starting with /api
+app.get(/^(?!\/api).*/, (req, res) => {
+  res.sendFile(path.join(frontendDistPath, 'index.html'));
 });
 
 // Start server
