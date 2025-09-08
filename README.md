@@ -163,6 +163,10 @@ Root files-
 
 └── .gitignore           # Ignore node_modules, logs, etc.
 
+
+# Project Demonstration - 
+https://drive.google.com/file/d/1Fc1zLNNRwU6BthWr_qYWWhTAbPy1liJs/view?usp=sharing
+
 ⚡ Setup & Installation
 1. Clone the repo
 git clone git@github.com:Gunnzzz-tech/onebox-email-ai.git
