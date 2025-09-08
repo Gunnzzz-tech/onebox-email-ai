@@ -2,7 +2,7 @@
 ## Project Structure
 ├── api-server.ts  # Main Express API server
 
-
+├── connectIMAP.ts       # IMAP account connector
 
 ⚡ Setup & Installation
 1. Clone the repo
