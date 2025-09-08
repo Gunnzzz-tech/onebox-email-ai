@@ -26,3 +26,14 @@ const imapConfig2: Imap.Config = {
 // Connect both accounts
 connectIMAP(imapConfig1, "Account1");
 connectIMAP(imapConfig2, "Account2");
+const app = express();
+const PORT = process.env.PORT || 4000;
+
+app.get("/", (_req, res) => {
+  res.send("✅ Onebox Email Aggregator is running on Railway!");
+});
+
+app.listen(PORT, () => {
+  console.log(`🌍 Server running on http://localhost:${PORT}`);
+});
+
