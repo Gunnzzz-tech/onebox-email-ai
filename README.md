@@ -4,6 +4,18 @@
 
 ├── connectIMAP.ts       # IMAP account connector
 
+├── imapClient.ts        # Low-level IMAP logic
+
+├── elasticsearchClient.ts # Elasticsearch connection + helpers
+
+├── searchEmails.ts      # Email search logic
+
+├── start-all.sh         # Script: start aggregator + API
+
+├── start-services.sh    # Script: start only backend services
+
+├── stop-services.sh     # Script: stop services
+
 ⚡ Setup & Installation
 1. Clone the repo
 git clone git@github.com:Gunnzzz-tech/onebox-email-ai.git
