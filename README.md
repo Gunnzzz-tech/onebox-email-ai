@@ -16,6 +16,14 @@
 
 ├── stop-services.sh     # Script: stop services
 
+├── docker-compose.yml   # Runs Elasticsearch in Docker
+
+├── index.ts             # Main entrypoint (aggregator + services)
+
+├── README.md            # Project guide (this file)
+
+└── .gitignore           # Ignore node_modules, logs, etc.
+
 ⚡ Setup & Installation
 1. Clone the repo
 git clone git@github.com:Gunnzzz-tech/onebox-email-ai.git
