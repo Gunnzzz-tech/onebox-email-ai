@@ -1,6 +1,6 @@
 # onebox-email-ai
 ## Project Structure
-├── api-server.ts 
+├── api-server.ts  # Main Express API server
 
 
 
