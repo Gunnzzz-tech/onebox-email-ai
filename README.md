@@ -1,16 +1,18 @@
 # onebox-email-ai
-api-server.ts         # Main Express API server                                  
-connectIMAP.ts        # IMAP account connector
-imapClient.ts         # Low-level IMAP logic
-elasticsearchClient.ts# Elasticsearch connection + helpers
-searchEmails.ts       # Email search logic
-start-all.sh          # Script: start aggregator + API
-start-services.sh     # Script: start only backend services
-stop-services.sh      # Script: stop services
-docker-compose.yml    # Runs Elasticsearch in Docker
-index.ts              # Main entrypoint (aggregator + services)
-README.md             # Project guide (this file)
-.gitignore            # Ignore node_modules, logs, etc.
+## Project Structure
+
+api-server.ts        # Main Express API server
+connectIMAP.ts       # IMAP account connector
+imapClient.ts        # Low-level IMAP logic
+elasticsearchClient.ts # Elasticsearch connection + helpers
+searchEmails.ts      # Email search logic
+start-all.sh         # Script: start aggregator + API
+start-services.sh    # Script: start only backend services
+stop-services.sh     # Script: stop services
+docker-compose.yml   # Runs Elasticsearch in Docker
+index.ts             # Main entrypoint (aggregator + services)
+README.md            # Project guide (this file)
+.gitignore           # Ignore node_modules, logs, etc.
 
 
 ⚡ Setup & Installation
