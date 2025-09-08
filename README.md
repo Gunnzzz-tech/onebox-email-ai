@@ -1,5 +1,5 @@
 # onebox-email-ai
-api-server.ts         # Main Express API server
+api-server.ts         # Main Express API server                                  
 connectIMAP.ts        # IMAP account connector
 imapClient.ts         # Low-level IMAP logic
 elasticsearchClient.ts# Elasticsearch connection + helpers
